@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(56, 52, 52);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    padding: 1.2rem 9%;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 1px 12px #80808080;
+    z-index: 100;
+    background-color: white;
+}
+header .logo {
+    font-weight: bold;
+    color: rgb(103, 99, 99);
+    font-size: 1.6rem;
+}
+header .logo i {
+    color: red;
+    padding-right: 5px;
+}
+header .menu ul{
+    display: flex;
+}
+header .menu ul li {
+    padding: 0 .6rem;
+}
+
+.container {
+    background: url(images/home-bg.jpg);
+    /* background-position: center; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+}
+.container .left {
+    margin-top: 60px;
+}
+.container .left h1{
+    font-size: 3rem;
+    color: #333333;
+    /* margin-bottom: 1.0rem; */
+}
+.container .left p {
+    margin: 10px 0;
+    color: #7F6666;
+    font-size: 1rem;
+    line-height: 22px;
+}
+.container .left button {
+    padding: 8px 30px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 2px solid red;
+    border-radius: 5px;
+    color: red;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .6s;
+}
+.container .left button:hover {
+    color: white;
+    background-color: red;
+}
+.container img {
+    width: 680px;
+    height: 570px;
+    margin-top: 40px;
+    animation: berguer 4s ease-in-out infinite;
+}
+
+
+@keyframes berguer {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1.5rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
